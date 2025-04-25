@@ -23,8 +23,8 @@ function executeForLast30Days() {
   }
 }
 
-function executeForLast100Days() {
-  for (var e = 100; e >= 0; e--) {
+function executeForLast200Days() {
+  for (var e = 200; e >= 0; e--) {
     var day = 0 - e;
     execute(day)
   }
@@ -61,7 +61,7 @@ function execute(daysOffsetStart) {
 }
 
 function processCalendar(calendarId, start, end) {
-  console.log("Hello")
+  console.log("Hello", start, end)
   var calendar = CalendarApp.getCalendarById(calendarId);
   var calendarName = calendar.getName();
   var events = calendar.getEvents(start, end);
