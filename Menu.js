@@ -5,5 +5,7 @@ function onOpen(e) {
       .addItem('Clean & Execute for yesterday', 'executeForYesterday')
       .addItem('Clean & Execute for Last 7 days', 'executeForLast7Days')
       .addItem('Clean & Execute for Last 30 days', 'executeForLast30Days')
+      .addItem('Clean & Execute for Future 60', 'executeForFuture60Days')
+
       .addToUi();
 }

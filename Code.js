@@ -23,6 +23,13 @@ function executeForLast30Days() {
   }
 }
 
+function executeForFuture60Days() {
+  for (var e = 0; e <= 60; e++) {
+    var day = e;
+    execute(day)
+  }
+}
+
 function executeForLast200Days() {
   for (var e = 200; e >= 0; e--) {
     var day = 0 - e;
